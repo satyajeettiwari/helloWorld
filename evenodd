@@ -1,10 +1,13 @@
 echo "...even or odd in shell script..."
 ...even or odd in shell script...
-echo 20
+echo -n "enter a number:"
+enter a number:
+read n
+echo -n "result:"
 
-if ['expr 20%2' == 0]
+if ['expr $n %2' == 0]
 then
-echo "20 is even"
+echo "$n is even"
 else
-echo "20 is odd"
+echo "$n is odd"
 fi
